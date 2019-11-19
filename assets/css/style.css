@@ -129,7 +129,7 @@ body {
   padding: 6rem 0;
 }
 
-.btn, .btn:link, .btn:visited {
+.custom-btn, .custom-btn:link, .custom-btn:visited {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -141,34 +141,34 @@ body {
   border: none;
   cursor: pointer;
 }
-.btn:hover {
+.custom-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.2);
 }
-.btn:hover::after {
+.custom-btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn:active, .btn:focus {
+.custom-btn:active, .custom-btn:focus {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.2);
   outline: none;
 }
-.btn--white {
+.custom-btn--white {
   background-color: #f7f7f7;
   color: #3b5998;
 }
-.btn--white::after {
+.custom-btn--white::after {
   background-color: #f7f7f7;
 }
-.btn--blue {
+.custom-btn--blue {
   background-color: #3b5998;
   color: #f7f7f7;
 }
-.btn--blue::after {
+.custom-btn--blue::after {
   background-color: #3b5998;
 }
-.btn::after {
+.custom-btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -180,7 +180,7 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
-.btn--animated {
+.custom-btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
@@ -322,6 +322,24 @@ body {
   left: -40px;
 }
 
+.bonus-box__btn {
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 100%;
+  text-decoration: none;
+  color: #f7f7f7;
+  background-color: #3b5998;
+  text-align: center;
+}
+.bonus-box__btn:hover {
+  text-decoration: none;
+  color: #f7f7f7;
+  background-color: #8b9dc3;
+}
+.bonus-box__btn span {
+  display: block;
+}
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(59, 89, 152, 0.9), rgba(59, 89, 152, 0.9)), url(../images/hero.jpg);
@@ -341,6 +359,11 @@ body {
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
+  .section__left {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
   .section__left {
     margin-bottom: 3rem;
   }
