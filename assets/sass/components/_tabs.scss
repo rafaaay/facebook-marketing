@@ -1,0 +1,65 @@
+.tabs {
+
+    &__title {
+        background-color: $color-primary-light;
+        a {
+            font-size: $font-size-medium;
+            color: $color-secondary;
+            background-color: transparent;
+            transition: all .4s;
+
+            &:hover, &:active {
+                background-color: $color-primary;
+                color: $color-secondary;
+            }
+        }
+    }
+
+    &__container {
+        margin-top: 4rem;
+    }
+
+    &__body {
+        padding: 3rem;
+    }
+
+    &__heading {
+        color: $color-primary;
+    }
+
+    &__paragraph {
+        font-style: italic;
+    }
+
+    &__list {
+        list-style: none;
+        margin-top: 6rem;
+
+        li {
+            background-color: $color-primary;
+            color: $color-secondary;
+            position: relative;
+            padding: 2rem 2rem 2rem 7rem;
+            
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+
+            span {
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                font-size: 4rem;
+                background: $color-primary-light;
+                color: $color-dark;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                top: -40px;
+                left: -40px;
+            }
+        }
+    }
+}

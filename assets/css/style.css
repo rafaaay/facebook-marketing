@@ -268,6 +268,60 @@ body {
   }
 }
 
+.tabs__title {
+  background-color: #8b9dc3;
+}
+.tabs__title a {
+  font-size: 2rem;
+  color: #f7f7f7;
+  background-color: transparent;
+  transition: all 0.4s;
+}
+.tabs__title a:hover, .tabs__title a:active {
+  background-color: #3b5998;
+  color: #f7f7f7;
+}
+.tabs__container {
+  margin-top: 4rem;
+}
+.tabs__body {
+  padding: 3rem;
+}
+.tabs__heading {
+  color: #3b5998;
+}
+.tabs__paragraph {
+  font-style: italic;
+}
+.tabs__list {
+  list-style: none;
+  margin-top: 6rem;
+}
+.tabs__list li {
+  background-color: #3b5998;
+  color: #f7f7f7;
+  position: relative;
+  padding: 2rem 2rem 2rem 7rem;
+}
+.tabs__list li:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.tabs__list li span {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 4rem;
+  background: #8b9dc3;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(59, 89, 152, 0.9), rgba(59, 89, 152, 0.9)), url(../images/hero.jpg);
