@@ -1,0 +1,22 @@
+.section {
+    &__left {
+
+        @include xs {
+            margin-bottom: $mobile-margin-bottom;
+        }
+
+        @include sm {
+            margin-bottom: $mobile-margin-bottom;
+        }
+
+    }
+}
+
+.embed-video {
+    width: 100%;
+    height: 48rem;
+
+    @include xs {
+        height: 32rem;
+    }
+}
