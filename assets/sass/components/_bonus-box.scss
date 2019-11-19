@@ -8,10 +8,12 @@
         color: $color-secondary;
         background-color: $color-primary;
         text-align: center;
+        padding: 1rem 0;
+        transition: all .5s;
 
         &:hover {
             text-decoration: none;
-            color: $color-secondary;
+            color: $color-dark;
             background-color: $color-primary-light;
         }
 
