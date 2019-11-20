@@ -4,7 +4,7 @@
         font-size: $font-size-medium;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
+        padding: 1rem 2rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
@@ -18,6 +18,7 @@
     &:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-dark, .2);
+        color: $color-secondary;
 
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
@@ -31,17 +32,26 @@
         outline: none;
     }
     
-    &--white {
-        background-color: $color-secondary;
-        color: $color-primary;
+    &--blue {
+        background-color: $color-blue;
+        color: $color-secondary;
 
         &::after {
             background-color: $color-secondary;
         }
     }
 
-    &--blue {
-        background-color: $color-primary;
+    &--green {
+        background-color: $color-green;
+        color: $color-secondary;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+    &--red {
+        background-color: $color-red;
         color: $color-secondary;
 
         &::after {

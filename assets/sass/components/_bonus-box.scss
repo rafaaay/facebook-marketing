@@ -1,4 +1,7 @@
 .bonus-box {
+    background-color: $color-blue;
+    margin-bottom: 1rem;
+    color: $color-secondary;
     
     &__btn {
         font-size: $font-size-medium;
@@ -6,20 +9,39 @@
         width: 100%;
         text-decoration: none;
         color: $color-secondary;
-        background-color: $color-primary;
+        background-color: $color-blue-dark;
         text-align: center;
-        padding: 1rem 0;
         transition: all .5s;
+        line-height: 3;
+        display: block;
 
         &:hover {
             text-decoration: none;
-            color: $color-dark;
-            background-color: $color-primary-light;
+            background-color: $color-blue-dark;
+            color: $color-secondary;
+            
+        }
+
+        &:hover > span {
+            letter-spacing: .1rem;
         }
 
         span {
-            display: block;
+            padding: 2rem;
+            line-height: 1;
+            background-color: $color-red;
+            float: left;
+            transition: all .5s;
         }
     }
 
+}
+
+.bonus-box-container {
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: transparent;
+        border-bottom: none;
+    }
 }

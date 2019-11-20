@@ -3,17 +3,40 @@
     transition: all .5s;
     padding: 3rem;
 
+    &:nth-child(even) {
+        background-color: $color-blue-dark;
+
+        p {
+            color: $color-secondary;
+        }
+
+        &:hover {
+            background-color: $color-blue;
+        }
+    }
+
+    &:nth-child(odd) {
+        background-color: $color-green-dark;
+
+        h4 {
+            color: $color-dark;
+        }
+
+        &:hover {
+            background-color: $color-green;
+        }
+    }
+
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
-
+    
     a {
         display: block;
         transition: all .5s;
 
         &:hover {
             text-decoration: none;
-            background-color: $color-primary-light;
         }
     }
 
@@ -35,6 +58,8 @@
     }
 
     h4 {
+        color: $color-secondary;
+
         @include xs {
             text-align: center;
         }

@@ -1,15 +1,16 @@
 .tabs {
 
     &__title {
-        background-color: $color-primary-light;
+        background-color: transparent;
         a {
             font-size: $font-size-medium;
             color: $color-secondary;
-            background-color: transparent;
+            background-color: $color-blue;
+            margin: 0 .3rem;
             transition: all .4s;
 
             &:hover, &:active {
-                background-color: $color-primary;
+                background-color: $color-red;
                 color: $color-secondary;
             }
         }
@@ -36,11 +37,11 @@
         margin-top: 6rem;
 
         li {
-            background-color: $color-primary;
+            background-color: $color-blue;
             color: $color-secondary;
             position: relative;
             padding: 2rem 2rem 2rem 7rem;
-            
+
             &:not(:last-child) {
                 margin-bottom: 8rem;
             }
@@ -50,7 +51,7 @@
                 height: 100px;
                 text-align: center;
                 font-size: 4rem;
-                background: $color-primary-light;
+                background: $color-red;
                 color: $color-dark;
                 display: flex;
                 align-items: center;
@@ -62,4 +63,9 @@
             }
         }
     }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: $color-red;
+    color: $color-secondary;
 }
