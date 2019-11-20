@@ -97,6 +97,7 @@
                 margin-bottom: 1rem;
                 display: block;
                 text-align: center;
+                font-weight: bold;
             }
         }
 
@@ -144,7 +145,7 @@
 
     .package__content__list {
         li {
-            border-bottom: 2px solid $color-blue;
+            // border-bottom: 2px solid $color-blue;
         }
 
         span {
@@ -175,7 +176,7 @@
 
     .package__content__list {
         li {
-            border-bottom: 2px solid $color-green;
+            // border-bottom: 2px solid $color-green;
         }
 
         span {
@@ -205,7 +206,7 @@
 
     .package__content__list {
         li {
-            border-bottom: 2px solid $color-red;
+            // border-bottom: 2px solid $color-red;
         }
 
         span {

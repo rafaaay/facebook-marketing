@@ -2,30 +2,52 @@
 
     transition: all .5s;
     padding: 3rem;
+    background-color: $color-blue-dark;
+    position: relative;
 
-    &:nth-child(even) {
-        background-color: $color-blue-dark;
-
-        p {
-            color: $color-secondary;
-        }
-
-        &:hover {
-            background-color: $color-blue;
-        }
+    &:after {
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        font-size: 4rem;
+        content: "\f13a";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3.5rem;
+        color: $color-red;
     }
 
-    &:nth-child(odd) {
-        background-color: $color-green-dark;
-
-        h4 {
-            color: $color-dark;
-        }
-
-        &:hover {
-            background-color: $color-green;
-        }
+    p {
+        color: $color-secondary;
     }
+
+    &:hover {
+        background-color: $color-blue;
+    }
+
+    // &:nth-child(even) {
+    //     background-color: $color-blue-dark;
+
+    //     p {
+    //         color: $color-secondary;
+    //     }
+
+    //     &:hover {
+    //         background-color: $color-blue;
+    //     }
+    // }
+
+    // &:nth-child(odd) {
+    //     background-color: $color-blue-dark;
+
+    //     h4 {
+    //         color: $color-dark;
+    //     }
+
+    //     &:hover {
+    //         background-color: $color-blue;
+    //     }
+    // }
 
     &:not(:last-child) {
         margin-bottom: 3rem;
