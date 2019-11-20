@@ -1,6 +1,6 @@
 .header {
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.9), rgba($color-primary, 0.9)), url(../images/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-blue, 0.9), rgba($color-blue, 0.9)), url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);

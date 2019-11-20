@@ -20,3 +20,116 @@
         height: 32rem;
     }
 }
+
+// False Beliefs and FAQS
+.faq-box {
+    border-bottom: 2px solid $color-blue !important;
+    margin-bottom: 1rem;
+    color: $color-dark;
+    
+    &__btn {
+        font-size: $font-size-medium;
+        text-transform: uppercase;
+        width: 100%;
+        text-decoration: none;
+        color: $color-secondary;
+        background-color: $color-blue-dark;
+        text-align: center;
+        transition: all .5s;
+        line-height: 1.5;
+        display: block;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $color-blue-dark;
+            color: $color-secondary;
+            
+        }
+
+        span {
+            padding: 2rem 1rem;
+            line-height: 1;
+            background-color: $color-red;
+            float: left;
+            transition: all .5s;
+        }
+    }
+
+}
+
+.faq-box-container {
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: transparent;
+        border-bottom: none;
+    }
+}
+
+.contact-me {
+    text-align: center;
+
+    &__text-imp {
+        font-size: $font-size-medium;
+        font-weight: bold;
+    }
+
+    &__text-regular {
+        font-size: $font-size-medium;
+    }
+
+    &__links {
+
+        margin-top: 4rem;
+
+        .link-block {
+            width: 5.5rem;
+            height: 5.5rem;
+            display: inline-block;
+            background-color: $color-red;
+            margin: 0 1.5rem;
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(0.9);
+                background-color: $color-red-dark;
+            }
+
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+                font-size: 3rem;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: #ffffff;
+                }
+            }
+        }
+
+    }
+}
+
+.footer {
+    background-color: $color-blue-dark;
+    color: $color-secondary;
+    padding: 3rem;
+
+    a {
+        color: $color-secondary;
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            color: $color-red;
+            text-decoration: none;
+        }
+    }
+}
